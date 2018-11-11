@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-VRCapstone.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"I:\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h.obj"
+"I:\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\VRCapstone.cpp.obj"
+"I:\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\VRCapstoneGameModeBase.cpp.obj"
+"I:\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\VRCapstone.init.gen.cpp.obj"
+"I:\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\VRCapstoneGameModeBase.gen.cpp.obj"
+"I:\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\PCLaunch.rc.res"
+/OUT:"I:\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\UE4Editor-VRCapstone.lib"

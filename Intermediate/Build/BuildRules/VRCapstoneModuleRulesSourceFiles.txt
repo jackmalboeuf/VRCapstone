@@ -1,0 +1,3 @@
+I:\VRCapstone\Source\VRCapstone\VRCapstone.Build.cs
+I:\VRCapstone\Source\VRCapstone.Target.cs
+I:\VRCapstone\Source\VRCapstoneEditor.Target.cs
