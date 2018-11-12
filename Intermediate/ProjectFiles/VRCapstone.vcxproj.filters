@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\VRCapstone.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{4EE23D7C-6930-4700-85A3-A28942B4C777}</UniqueIdentifier>
+			<UniqueIdentifier>{8432AF9B-EE5D-4707-8E2F-7807DEE948C9}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\VRCapstone.Target.cs">
 			<Filter>Source</Filter>
@@ -13,34 +13,34 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{866E7507-1113-4EBD-9CEB-72A2607DA3FB}</UniqueIdentifier>
+			<UniqueIdentifier>{5241FEA0-9EC1-4C05-A60E-489B836CD023}</UniqueIdentifier>
 		</Filter>
-		<None Include="..\..\Config\DefaultEngine.ini">
+		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
 		</None >
-		<None Include="..\..\Config\DefaultEditor.ini">
+		<None Include="..\..\Config\DefaultEngine.ini">
 			<Filter>Config</Filter>
 		</None >
 		<None Include="..\..\Config\DefaultGame.ini">
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\VRCapstone">
-			<UniqueIdentifier>{1A41A5B9-1AEF-43AE-A32D-A0D4F208BCDF}</UniqueIdentifier>
+			<UniqueIdentifier>{9E653740-03EF-4CCA-A6CC-EA691A35AE33}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\VRCapstone\VRCapstone.Build.cs">
 			<Filter>Source\VRCapstone</Filter>
 		</None >
-		<ClInclude Include="..\..\Source\VRCapstone\VRCapstone.h">
-			<Filter>Source\VRCapstone</Filter>
-		</ClInclude >
 		<ClCompile Include="..\..\Source\VRCapstone\VRCapstone.cpp">
 			<Filter>Source\VRCapstone</Filter>
 		</ClCompile >
-		<ClInclude Include="..\..\Source\VRCapstone\VRCapstoneGameModeBase.h">
+		<ClInclude Include="..\..\Source\VRCapstone\VRCapstone.h">
 			<Filter>Source\VRCapstone</Filter>
 		</ClInclude >
 		<ClCompile Include="..\..\Source\VRCapstone\VRCapstoneGameModeBase.cpp">
 			<Filter>Source\VRCapstone</Filter>
 		</ClCompile >
+		<ClInclude Include="..\..\Source\VRCapstone\VRCapstoneGameModeBase.h">
+			<Filter>Source\VRCapstone</Filter>
+		</ClInclude >
 	</ItemGroup>
 </Project>
