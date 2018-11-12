@@ -1,7 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 D:\GitHub\VRCapstone\Source\VRCapstone\VRCapstone.Build.cs
 D:\GitHub\VRCapstone\Source\VRCapstone.Target.cs
 D:\GitHub\VRCapstone\Source\VRCapstoneEditor.Target.cs
+=======
+E:\Columbia\Senior\Indie\VRCapstone\Source\VRCapstone\VRCapstone.Build.cs
+E:\Columbia\Senior\Indie\VRCapstone\Source\VRCapstone.Target.cs
+E:\Columbia\Senior\Indie\VRCapstone\Source\VRCapstoneEditor.Target.cs
+>>>>>>> origin/master
 =======
 E:\Columbia\Senior\Indie\VRCapstone\Source\VRCapstone\VRCapstone.Build.cs
 E:\Columbia\Senior\Indie\VRCapstone\Source\VRCapstone.Target.cs
