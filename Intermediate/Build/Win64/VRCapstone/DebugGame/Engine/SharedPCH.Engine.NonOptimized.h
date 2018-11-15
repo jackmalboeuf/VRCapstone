@@ -38,7 +38,7 @@
 #define PROJECT_PRODUCT_IDENTIFIER VRCapstone
 #define NDEBUG 1
 #define UE_BUILD_DEVELOPMENT 1
-#define UE_ENGINE_DIRECTORY "C:/Program Files/Epic Games/UE_4.20/Engine/"
+#define UE_ENGINE_DIRECTORY "../../../../../../Program Files/Epic Games/UE_4.20/Engine/"
 #define UE_IS_ENGINE_MODULE 1
 #define WITH_PHYSX 1
 #define WITH_APEX 1

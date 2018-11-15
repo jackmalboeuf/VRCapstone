@@ -19,9 +19,9 @@
 /wd4838
 /we4668
 /I .
-/I E:\Columbia\Senior\Indie\VRCapstone\Intermediate\Build\Win64\UE4\Inc\VRCapstone
-/I E:\Columbia\Senior\Indie\VRCapstone\Source
-/I E:\Columbia\Senior\Indie\VRCapstone\Source\VRCapstone
+/I C:\workspace\MMOVRCapstone\MMOVrCapstone\VRCapstone\Intermediate\Build\Win64\UE4\Inc\VRCapstone
+/I C:\workspace\MMOVRCapstone\MMOVrCapstone\VRCapstone\Source
+/I C:\workspace\MMOVRCapstone\MMOVrCapstone\VRCapstone\Source\VRCapstone
 /I Runtime
 /I Runtime\Core\Public
 /I Runtime\Core
@@ -206,20 +206,20 @@
 /I ..\Intermediate\Build\Win64\UE4\Inc\AnimationCore
 /I Runtime\AnimationCore\Public
 /I Runtime\AnimationCore
-/I "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\INCLUDE"
+/I "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.14.26428\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"
 /D_HAS_EXCEPTIONS=0
 /D_HAS_EXCEPTIONS=0
-/FI"E:\Columbia\Senior\Indie\VRCapstone\Intermediate\Build\Win64\VRCapstone\DebugGame\Engine\SharedPCH.Engine.NonOptimized.h"
-/Yu"E:\Columbia\Senior\Indie\VRCapstone\Intermediate\Build\Win64\VRCapstone\DebugGame\Engine\SharedPCH.Engine.NonOptimized.h"
-/Fp"E:\Columbia\Senior\Indie\VRCapstone\Intermediate\Build\Win64\VRCapstone\DebugGame\Engine\SharedPCH.Engine.NonOptimized.h.pch"
-"E:\Columbia\Senior\Indie\VRCapstone\Intermediate\Build\Win64\UE4\Inc\VRCapstone\VRCapstoneGameModeBase.gen.cpp"
-/FI"E:\Columbia\Senior\Indie\VRCapstone\Intermediate\Build\Win64\UE4\DebugGame\VRCapstone\Definitions.VRCapstone.h"
-/Fo"E:\Columbia\Senior\Indie\VRCapstone\Intermediate\Build\Win64\UE4\DebugGame\VRCapstone\VRCapstoneGameModeBase.gen.cpp.obj"
+/FI"C:\workspace\MMOVRCapstone\MMOVrCapstone\VRCapstone\Intermediate\Build\Win64\VRCapstone\DebugGame\Engine\SharedPCH.Engine.NonOptimized.h"
+/Yu"C:\workspace\MMOVRCapstone\MMOVrCapstone\VRCapstone\Intermediate\Build\Win64\VRCapstone\DebugGame\Engine\SharedPCH.Engine.NonOptimized.h"
+/Fp"C:\workspace\MMOVRCapstone\MMOVrCapstone\VRCapstone\Intermediate\Build\Win64\VRCapstone\DebugGame\Engine\SharedPCH.Engine.NonOptimized.h.pch"
+"C:\workspace\MMOVRCapstone\MMOVrCapstone\VRCapstone\Intermediate\Build\Win64\UE4\Inc\VRCapstone\VRCapstoneGameModeBase.gen.cpp"
+/FI"C:\workspace\MMOVRCapstone\MMOVrCapstone\VRCapstone\Intermediate\Build\Win64\UE4\DebugGame\VRCapstone\Definitions.VRCapstone.h"
+/Fo"C:\workspace\MMOVRCapstone\MMOVrCapstone\VRCapstone\Intermediate\Build\Win64\UE4\DebugGame\VRCapstone\VRCapstoneGameModeBase.gen.cpp.obj"
 /TP
 /GR-
 /W4
