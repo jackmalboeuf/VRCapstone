@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\VRCapstone.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{BFE1A77D-98DD-4F58-8044-DCF29D279E0F}</UniqueIdentifier>
+			<UniqueIdentifier>{159ECDAF-C2E8-4FF2-9329-AB54B1653247}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\VRCapstone.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{08D1870C-9AC9-4C8E-83C9-6E0994DC6657}</UniqueIdentifier>
+			<UniqueIdentifier>{A92B94CA-7389-4C26-BF3A-97F54581AA0F}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -28,7 +28,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\VRCapstone">
-			<UniqueIdentifier>{6CE9D9E0-DA4D-4715-AEEA-4E3D58AC85DB}</UniqueIdentifier>
+			<UniqueIdentifier>{124BCCF5-39FF-49B6-BA1D-D013821FE80A}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\VRCapstone\VRCapstone.Build.cs">
 			<Filter>Source\VRCapstone</Filter>

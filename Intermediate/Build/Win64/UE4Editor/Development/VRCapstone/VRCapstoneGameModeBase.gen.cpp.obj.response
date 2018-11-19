@@ -23,9 +23,9 @@
 /wd4838
 /we4668
 /I .
-/I C:\workspace\MMOVRCapstone\MMOVrCapstone\VRCapstone\Intermediate\Build\Win64\UE4Editor\Inc\VRCapstone
-/I C:\workspace\MMOVRCapstone\MMOVrCapstone\VRCapstone\Source
-/I C:\workspace\MMOVRCapstone\MMOVrCapstone\VRCapstone\Source\VRCapstone
+/I C:\workspace\VRCapstone\VRCapstone\Intermediate\Build\Win64\UE4Editor\Inc\VRCapstone
+/I C:\workspace\VRCapstone\VRCapstone\Source
+/I C:\workspace\VRCapstone\VRCapstone\Source\VRCapstone
 /I Runtime
 /I Runtime\Core\Public
 /I Runtime\Core
@@ -409,12 +409,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"
-/FI"C:\workspace\MMOVRCapstone\MMOVrCapstone\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h"
-/Yu"C:\workspace\MMOVRCapstone\MMOVrCapstone\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"C:\workspace\MMOVRCapstone\MMOVrCapstone\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h.pch"
-"C:\workspace\MMOVRCapstone\MMOVrCapstone\VRCapstone\Intermediate\Build\Win64\UE4Editor\Inc\VRCapstone\VRCapstoneGameModeBase.gen.cpp"
-/FI"C:\workspace\MMOVRCapstone\MMOVrCapstone\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\Definitions.VRCapstone.h"
-/Fo"C:\workspace\MMOVRCapstone\MMOVrCapstone\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\VRCapstoneGameModeBase.gen.cpp.obj"
+/FI"C:\workspace\VRCapstone\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h"
+/Yu"C:\workspace\VRCapstone\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"C:\workspace\VRCapstone\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h.pch"
+"C:\workspace\VRCapstone\VRCapstone\Intermediate\Build\Win64\UE4Editor\Inc\VRCapstone\VRCapstoneGameModeBase.gen.cpp"
+/FI"C:\workspace\VRCapstone\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\Definitions.VRCapstone.h"
+/Fo"C:\workspace\VRCapstone\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\VRCapstoneGameModeBase.gen.cpp.obj"
 /TP
 /GR-
 /W4
