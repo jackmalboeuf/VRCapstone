@@ -23,6 +23,7 @@ private:
 	float moveWaitTime;
 	float timer;
 	FVector spawnLocation;
+	FVector direction;
 
 	enum ActorState { Standing, Moving };
 	ActorState m_state;

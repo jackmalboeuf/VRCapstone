@@ -29,11 +29,12 @@ void UUMoveComponent::SetLocation()
 	float x = FMath::RandRange((spawnLocation.X - wanderDistance), (spawnLocation.X + wanderDistance));
 	float y = FMath::RandRange((spawnLocation.Y - wanderDistance), (spawnLocation.Y + wanderDistance));
 	goalLocation = FVector(x,y, 0);
+
 }
 
 void UUMoveComponent::Move()
 {
-	
+	FVector V = goalLocation - GetOwner()->GetActorLocation();
 }
 
 
