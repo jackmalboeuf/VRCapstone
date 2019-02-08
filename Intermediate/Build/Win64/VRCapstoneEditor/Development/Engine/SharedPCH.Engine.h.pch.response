@@ -185,11 +185,11 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"
-/I C:\workspace\VRCapstone\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine
-/Yc"C:\workspace\VRCapstone\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"C:\workspace\VRCapstone\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h.pch"
-"C:\workspace\VRCapstone\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.cpp"
-/Fo"C:\workspace\VRCapstone\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h.obj"
+/I I:\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine
+/Yc"I:\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"I:\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h.pch"
+"I:\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.cpp"
+/Fo"I:\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h.obj"
 /TP
 /GR-
 /W4
