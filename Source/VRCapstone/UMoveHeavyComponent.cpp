@@ -31,8 +31,8 @@ void UUMoveHeavyComponent::SetGoalLocation()
 	float x = FMath::RandRange((m_spawnLocation.X - m_wanderDistance), (m_spawnLocation.X + m_wanderDistance));
 	float y = FMath::RandRange((m_spawnLocation.Y - m_wanderDistance), (m_spawnLocation.Y + m_wanderDistance));
 	float z = GetOwner()->GetActorLocation().Z;
-	m_goalLocation = FVector(x, y, z);
 
+	GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, FString::Printf(TEXT("Goal Location: %f, %f, %f"), x, y, z));
 }
 
 void UUMoveHeavyComponent::RotateTowardLocation(float DeltaTime, FVector Location)
@@ -67,9 +67,14 @@ void UUMoveHeavyComponent::MoveTowardGoalLocation(float DeltaTime)
 
 bool UUMoveHeavyComponent::CheckRotationIsNearlyZero(FVector Location)
 {
-	FVector vectorToLocation = Location - GetOwner()->GetActorForwardVector();
+	FVector vectorToLocation = Location - GetOwner()->GetActorLocation();
+	vectorToLocation.Normalize();
+
+
 	GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, FString::Printf(TEXT("vectorToLocation.X: %f"), vectorToLocation.X));
-	if (FMath::IsNearlyZero(vectorToLocation.X))
+	GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, FString::Printf(TEXT("actor.X: %f"), GetOwner()->GetActorForwardVector().X));
+
+	if (FMath::IsNearlyZero(FMath::Acos(FVector::DotProduct(vectorToLocation, GetOwner()->GetActorForwardVector()))))
 	{
 		return true;
 	}
@@ -130,4 +135,3 @@ void UUMoveHeavyComponent::TickComponent(float DeltaTime, ELevelTick TickType, F
 		break;
 	}
 }
-
