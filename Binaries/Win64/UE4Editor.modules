@@ -2,6 +2,14 @@
 	"BuildId": "4212847",
 	"Modules": 
 	{
-		"VRCapstone": "UE4Editor-VRCapstone-3560.dll"
+<<<<<<< HEAD
+<<<<<<< HEAD
+		"VRCapstone": "UE4Editor-VRCapstone-7362.dll"
+=======
+		"VRCapstone": "UE4Editor-VRCapstone-41.dll"
+>>>>>>> origin/master
+=======
+		"VRCapstone": "UE4Editor-VRCapstone-41.dll"
+>>>>>>> origin/master
 	}
 }
