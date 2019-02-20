@@ -185,11 +185,11 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"
-/I E:\Columbia\Senior\Indie\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine
-/Yc"E:\Columbia\Senior\Indie\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"E:\Columbia\Senior\Indie\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h.pch"
-"E:\Columbia\Senior\Indie\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.cpp"
-/Fo"E:\Columbia\Senior\Indie\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h.obj"
+/I C:\Users\Haneg\Documents\GitHub\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine
+/Yc"C:\Users\Haneg\Documents\GitHub\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"C:\Users\Haneg\Documents\GitHub\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h.pch"
+"C:\Users\Haneg\Documents\GitHub\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.cpp"
+/Fo"C:\Users\Haneg\Documents\GitHub\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h.obj"
 /TP
 /GR-
 /W4
