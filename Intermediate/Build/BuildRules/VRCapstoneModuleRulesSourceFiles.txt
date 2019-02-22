@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 C:\Users\Haneg\Desktop\VRCapstone\Source\VRCapstone\VRCapstone.Build.cs
 C:\Users\Haneg\Desktop\VRCapstone\Source\VRCapstone.Target.cs
 C:\Users\Haneg\Desktop\VRCapstone\Source\VRCapstoneEditor.Target.cs
+=======
+E:\Columbia\Senior\Indie\VRCapstone\Source\VRCapstone\VRCapstone.Build.cs
+E:\Columbia\Senior\Indie\VRCapstone\Source\VRCapstone.Target.cs
+E:\Columbia\Senior\Indie\VRCapstone\Source\VRCapstoneEditor.Target.cs
+>>>>>>> parent of 5b99422... kjdjdjd
