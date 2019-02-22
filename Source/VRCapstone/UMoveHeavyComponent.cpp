@@ -11,7 +11,6 @@ UUMoveHeavyComponent::UUMoveHeavyComponent()
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
-
 	// ...
 }
 
@@ -22,6 +21,7 @@ void UUMoveHeavyComponent::BeginPlay()
 	Super::BeginPlay();
 	m_state = Standing;
 	m_spawnLocation = GetOwner()->GetActorLocation();
+	m_timer = m_timeBetweenMovingOrShooting;
 	// ...
 	
 }
@@ -32,41 +32,69 @@ void UUMoveHeavyComponent::SetGoalLocation()
 	float y = FMath::RandRange((m_spawnLocation.Y - m_wanderDistance), (m_spawnLocation.Y + m_wanderDistance));
 	float z = GetOwner()->GetActorLocation().Z;
 
+	m_goalLocation = FVector(x, y, z);
 	GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, FString::Printf(TEXT("Goal Location: %f, %f, %f"), x, y, z));
 }
 
 void UUMoveHeavyComponent::RotateTowardLocation(float DeltaTime, FVector Location)
 {
-	/*FRotator newRotation = FRotator(0, m_rotationSpeed * DeltaTime, 0);
-	FQuat quatRotation = FQuat(newRotation);
-	GetOwner()->AddActorLocalRotation(quatRotation, false, 0, ETeleportType::None);*/
-
 	FRotator NewRotation = GetOwner()->GetActorRotation();
 
-	//Determine if m_goalLocation is left or right of actor
-	FVector rotationDirection = Location - GetOwner()->GetActorLocation();
-	if (rotationDirection.X > 0)
+	//Determine if Location is clockwise or counter-clockwise of actor
+	//FVector normalizedLocation = Location;
+	//normalizedLocation.Normalize();
+
+	FVector vectorToLocation = Location - GetOwner()->GetActorLocation();
+	vectorToLocation.Normalize();
+
+	/*FVector normalizedActorLocation = GetOwner()->GetActorLocation();
+	normalizedActorLocation.Normalize();*/
+
+	//the difference between the two angles 0-2PI of normalizedLocation and the forward vector of the actor
+	float diff = FMath::Atan2(vectorToLocation.Y, vectorToLocation.X) - FMath::Atan2(GetOwner()->GetActorForwardVector().Y, GetOwner()->GetActorForwardVector().X);
+	//float diff = FMath::Atan2(GetOwner()->GetActorForwardVector().Y, GetOwner()->GetActorForwardVector().X) - FMath::Atan2(normalizedLocation.Y, normalizedLocation.X);
+	if ((diff >= 0 && diff <= PI) || diff <= -PI)
 	{
 		NewRotation.Yaw += m_rotationSpeed * DeltaTime;
+		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, FString::Printf(TEXT("rotate CounterClockwise")));
+	}
+	else if (FMath::Abs(diff) < FMath::Abs((m_rotationSpeed * DeltaTime)))
+	{
+		NewRotation.Yaw += diff * 10;
+		//HACK: Do whatever is also in the switch statement below. May need a switch statement of it's own to make sure we don't get infinite loop
+		//switch (m_state)
+		//{
+		//case RotatingTowardGoal:
+		//	m_timer = 2;
+		//	m_state = Moving;
+		//	break;
+		//case RotatingTowardPlayer:
+		//	m_timer = m_timeBetweenMovingOrShooting;
+		//	m_state = Standing;
+		//	break;
+		//}
+		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, FString::Printf(TEXT("add difference")));
 	}
 	else
 	{
 		NewRotation.Yaw -= m_rotationSpeed * DeltaTime;
+		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, FString::Printf(TEXT("rotate Clockwise")));
 	}
 
 	GetOwner()->SetActorRotation(NewRotation);
 }
 
-void UUMoveHeavyComponent::RotateTowardPlayer(float DeltaTime)
-{
-}
-
 void UUMoveHeavyComponent::MoveTowardGoalLocation(float DeltaTime)
 {
+	FVector newLoc = GetOwner()->GetActorLocation();
+	newLoc += GetOwner()->GetActorForwardVector() * (m_movementSpeed * DeltaTime);
+
+	GetOwner()->SetActorLocation(newLoc);
 }
 
-bool UUMoveHeavyComponent::CheckRotationIsNearlyZero(FVector Location)
+bool UUMoveHeavyComponent::CheckRotationIsNearlyZero(float DeltaTime, FVector Location)
 {
+	//Location.Normalize();
 	FVector vectorToLocation = Location - GetOwner()->GetActorLocation();
 	vectorToLocation.Normalize();
 
@@ -74,12 +102,14 @@ bool UUMoveHeavyComponent::CheckRotationIsNearlyZero(FVector Location)
 	GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, FString::Printf(TEXT("vectorToLocation.X: %f"), vectorToLocation.X));
 	GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, FString::Printf(TEXT("actor.X: %f"), GetOwner()->GetActorForwardVector().X));
 
-	if (FMath::IsNearlyZero(FMath::Acos(FVector::DotProduct(vectorToLocation, GetOwner()->GetActorForwardVector()))))
-	{
-		return true;
-	}
+	//if (FMath::IsNearlyZero(FMath::Acos(FVector::DotProduct(vectorToLocation, GetOwner()->GetActorForwardVector())), m_rotationSpeed * DeltaTime))
+	//{
+	//	return true;
+	//}
 
-	return false;
+	//return FMath::IsNearlyZero(FMath::Acos(FVector::DotProduct(vectorToLocation, GetOwner()->GetActorForwardVector())));
+	return FMath::IsNearlyZero(FMath::Atan2(vectorToLocation.Y, vectorToLocation.X) - FMath::Atan2(GetOwner()->GetActorForwardVector().Y, GetOwner()->GetActorForwardVector().X), 0.01f);
+
 }
 
 
@@ -89,6 +119,7 @@ void UUMoveHeavyComponent::TickComponent(float DeltaTime, ELevelTick TickType, F
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
 	m_timer -= DeltaTime;
+	GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, FString::Printf(TEXT("Timer: %f"), m_timer));
 
 	//RotateTowardLocation(DeltaTime, GetOwner()->GetActorLocation());
 
@@ -101,7 +132,6 @@ void UUMoveHeavyComponent::TickComponent(float DeltaTime, ELevelTick TickType, F
 
 			if (m_oddsOfShootingInPercent <= 0)
 			{
-				//TODO move
 				m_state = RotatingTowardGoal;
 			}
 			else
@@ -112,22 +142,29 @@ void UUMoveHeavyComponent::TickComponent(float DeltaTime, ELevelTick TickType, F
 				}
 			}
 			
-			m_timer = m_timeBetweenMovingOrShooting;
+			//m_timer = m_timeBetweenMovingOrShooting;
 		}
 		break;
 	case Moving:
+		MoveTowardGoalLocation(DeltaTime);
+		if (m_timer < 0)
+		{
+			m_state = RotatingTowardPlayer;
+		}
 		break;
 	case RotatingTowardGoal:
 		RotateTowardLocation(DeltaTime, m_goalLocation);
-		if (CheckRotationIsNearlyZero(m_goalLocation))
+		if (CheckRotationIsNearlyZero(DeltaTime, m_goalLocation))
 		{
+			m_timer = 2;
 			m_state = Moving;
 		}
 		break;
 	case RotatingTowardPlayer:
 		RotateTowardLocation(DeltaTime, m_player->GetActorLocation());
-		if (CheckRotationIsNearlyZero(m_player->GetActorLocation()))
+		if (CheckRotationIsNearlyZero(DeltaTime, m_player->GetActorLocation()))
 		{
+			m_timer = m_timeBetweenMovingOrShooting;
 			m_state = Standing;
 		}
 		break;
