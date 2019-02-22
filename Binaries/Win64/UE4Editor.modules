@@ -3,7 +3,11 @@
 	"Modules": 
 	{
 <<<<<<< HEAD
+<<<<<<< HEAD
 		"VRCapstone": "UE4Editor-VRCapstone-8131.dll"
+=======
+		"VRCapstone": "UE4Editor-VRCapstone-3560.dll"
+>>>>>>> parent of 5b99422... kjdjdjd
 =======
 		"VRCapstone": "UE4Editor-VRCapstone-3560.dll"
 >>>>>>> parent of 5b99422... kjdjdjd

@@ -405,6 +405,12 @@
 /I ThirdParty\libSampleRate\Public
 /I ThirdParty\libSampleRate
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+/I E:\Columbia\Senior\Indie\VRCapstone\Intermediate\Build\Win64\UE4Editor\Inc\VRCapstone
+/I E:\Columbia\Senior\Indie\VRCapstone\Source
+/I E:\Columbia\Senior\Indie\VRCapstone\Source\VRCapstone
+>>>>>>> parent of 5b99422... kjdjdjd
 =======
 /I E:\Columbia\Senior\Indie\VRCapstone\Intermediate\Build\Win64\UE4Editor\Inc\VRCapstone
 /I E:\Columbia\Senior\Indie\VRCapstone\Source
@@ -417,6 +423,7 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"
 <<<<<<< HEAD
+<<<<<<< HEAD
 /FI"C:\Users\Haneg\Desktop\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h"
 /Yu"C:\Users\Haneg\Desktop\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h"
 /Fp"C:\Users\Haneg\Desktop\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h.pch"
@@ -424,12 +431,17 @@
 /FI"C:\Users\Haneg\Desktop\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\Definitions.VRCapstone.h"
 /Fo"C:\Users\Haneg\Desktop\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\VRCapstone.cpp.obj"
 =======
+=======
+>>>>>>> parent of 5b99422... kjdjdjd
 /FI"E:\Columbia\Senior\Indie\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h"
 /Yu"E:\Columbia\Senior\Indie\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h"
 /Fp"E:\Columbia\Senior\Indie\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h.pch"
 "E:\Columbia\Senior\Indie\VRCapstone\Source\VRCapstone\VRCapstone.cpp"
 /FI"E:\Columbia\Senior\Indie\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\Definitions.VRCapstone.h"
 /Fo"E:\Columbia\Senior\Indie\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\VRCapstone.cpp.obj"
+<<<<<<< HEAD
+>>>>>>> parent of 5b99422... kjdjdjd
+=======
 >>>>>>> parent of 5b99422... kjdjdjd
 /TP
 /GR-
