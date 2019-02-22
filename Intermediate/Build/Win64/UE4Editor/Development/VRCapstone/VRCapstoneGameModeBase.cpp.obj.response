@@ -24,10 +24,26 @@
 /wd4838
 /we4668
 /I .
-/I C:\Users\Haneg\Desktop\VRCapstone\Intermediate\Build\Win64\UE4Editor\Inc\VRCapstone
-/I C:\Users\Haneg\Desktop\VRCapstone\Source
-/I C:\Users\Haneg\Desktop\VRCapstone\Source\VRCapstone
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
 /I Runtime
+/I Runtime\Engine\Classes
+/I Runtime\Engine\Public
+/I Runtime\Engine
+/I Runtime\Engine\Public\AI
+/I Runtime\Engine\Public\AI\Navigation
+/I Runtime\Engine\Public\Animation
+/I Runtime\Engine\Public\Curves
+/I Runtime\Engine\Public\EdGraph
+/I Runtime\Engine\Public\Internationalization
+/I Runtime\Engine\Public\Net
+/I Runtime\Engine\Public\PacketHandlers
+/I Runtime\Engine\Public\Performance
+/I Runtime\Engine\Public\Physics
+/I Runtime\Engine\Public\ProfilingDebugging
+/I Runtime\Engine\Public\Rendering
+/I Runtime\Engine\Public\Slate
+/I Runtime\Engine\Public\Tests
+/I Runtime\Engine\Public\VisualLogger
 /I Runtime\Core\Public
 /I Runtime\Core
 /I Runtime\Core\Public\Algo
@@ -67,25 +83,6 @@
 /I Runtime\CoreUObject\Public\Serialization\Formatters
 /I Runtime\CoreUObject\Public\Templates
 /I Runtime\CoreUObject\Public\UObject
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
-/I Runtime\Engine\Classes
-/I Runtime\Engine\Public
-/I Runtime\Engine
-/I Runtime\Engine\Public\AI
-/I Runtime\Engine\Public\AI\Navigation
-/I Runtime\Engine\Public\Animation
-/I Runtime\Engine\Public\Curves
-/I Runtime\Engine\Public\EdGraph
-/I Runtime\Engine\Public\Internationalization
-/I Runtime\Engine\Public\Net
-/I Runtime\Engine\Public\PacketHandlers
-/I Runtime\Engine\Public\Performance
-/I Runtime\Engine\Public\Physics
-/I Runtime\Engine\Public\ProfilingDebugging
-/I Runtime\Engine\Public\Rendering
-/I Runtime\Engine\Public\Slate
-/I Runtime\Engine\Public\Tests
-/I Runtime\Engine\Public\VisualLogger
 /I Runtime\ApplicationCore\Public
 /I Runtime\ApplicationCore
 /I Runtime\ApplicationCore\Public\GenericPlatform
@@ -406,6 +403,7 @@
 /I ThirdParty\libSampleRate
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 /I E:\Columbia\Senior\Indie\VRCapstone\Intermediate\Build\Win64\UE4Editor\Inc\VRCapstone
 /I E:\Columbia\Senior\Indie\VRCapstone\Source
@@ -416,12 +414,27 @@
 /I E:\Columbia\Senior\Indie\VRCapstone\Source
 /I E:\Columbia\Senior\Indie\VRCapstone\Source\VRCapstone
 >>>>>>> parent of 5b99422... kjdjdjd
+=======
+/I D:\GitHub\VRCapstone\Intermediate\Build\Win64\UE4Editor\Inc\VRCapstone
+/I D:\GitHub\VRCapstone\Source
+/I D:\GitHub\VRCapstone\Source\VRCapstone
+/I D:\VisualStudio2017\VC\Tools\MSVC\14.16.27023\INCLUDE
+/I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6\include\um"
+=======
+=======
+>>>>>>> origin/master
+/I C:\Users\Haneg\Documents\GitHub\VRCapstone\Intermediate\Build\Win64\UE4Editor\Inc\VRCapstone
+/I C:\Users\Haneg\Documents\GitHub\VRCapstone\Source
+/I C:\Users\Haneg\Documents\GitHub\VRCapstone\Source\VRCapstone
+>>>>>>> parent of ae7c509... Lets Pretend I fixed it
 /I "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"
+>>>>>>> origin/master
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 /FI"C:\Users\Haneg\Desktop\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h"
@@ -443,6 +456,27 @@
 >>>>>>> parent of 5b99422... kjdjdjd
 =======
 >>>>>>> parent of 5b99422... kjdjdjd
+=======
+/FI"D:\GitHub\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h"
+/Yu"D:\GitHub\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"D:\GitHub\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h.pch"
+"D:\GitHub\VRCapstone\Source\VRCapstone\VRCapstoneGameModeBase.cpp"
+/FI"D:\GitHub\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\Definitions.VRCapstone.h"
+/Fo"D:\GitHub\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\VRCapstoneGameModeBase.cpp.obj"
+=======
+=======
+>>>>>>> origin/master
+/FI"C:\Users\Haneg\Documents\GitHub\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h"
+/Yu"C:\Users\Haneg\Documents\GitHub\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"C:\Users\Haneg\Documents\GitHub\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h.pch"
+"C:\Users\Haneg\Documents\GitHub\VRCapstone\Source\VRCapstone\VRCapstoneGameModeBase.cpp"
+/FI"C:\Users\Haneg\Documents\GitHub\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\Definitions.VRCapstone.h"
+/Fo"C:\Users\Haneg\Documents\GitHub\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\VRCapstoneGameModeBase.cpp.obj"
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
+>>>>>>> origin/master
+>>>>>>> parent of ae7c509... Lets Pretend I fixed it
 /TP
 /GR-
 /W4

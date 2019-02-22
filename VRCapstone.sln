@@ -3,33 +3,39 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.25807.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{7BCBFBA9-ECBF-411B-87CD-B452BFF57F40}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{0D9661C8-CC96-43B8-997F-E9F357BB792A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{81A86389-902E-4D22-BABE-5F2CDFA81F8B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{47A49447-A969-40FC-BAF5-1D06482E2287}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UE4", "Intermediate\ProjectFiles\UE4.vcxproj", "{08A17B06-38FC-4841-B885-BBC236AFF333}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UE4", "Intermediate\ProjectFiles\UE4.vcxproj", "{1A733FCB-14F8-488F-92D0-459AAD4C5749}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VRCapstone", "Intermediate\ProjectFiles\VRCapstone.vcxproj", "{25DEFBD4-9A78-4EFC-BF5F-857A2B25823B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VRCapstone", "Intermediate\ProjectFiles\VRCapstone.vcxproj", "{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		DebugGame Editor|HTML5 = DebugGame Editor|HTML5
+		DebugGame Editor|IOS = DebugGame Editor|IOS
 		DebugGame Editor|Win32 = DebugGame Editor|Win32
 		DebugGame Editor|Win64 = DebugGame Editor|Win64
 		DebugGame|HTML5 = DebugGame|HTML5
+		DebugGame|IOS = DebugGame|IOS
 		DebugGame|Win32 = DebugGame|Win32
 		DebugGame|Win64 = DebugGame|Win64
 		Development Editor|HTML5 = Development Editor|HTML5
+		Development Editor|IOS = Development Editor|IOS
 		Development Editor|Win32 = Development Editor|Win32
 		Development Editor|Win64 = Development Editor|Win64
 		Development|HTML5 = Development|HTML5
+		Development|IOS = Development|IOS
 		Development|Win32 = Development|Win32
 		Development|Win64 = Development|Win64
 		Shipping|HTML5 = Shipping|HTML5
+		Shipping|IOS = Shipping|IOS
 		Shipping|Win32 = Shipping|Win32
 		Shipping|Win64 = Shipping|Win64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< HEAD
 <<<<<<< HEAD
 		{08A17B06-38FC-4841-B885-BBC236AFF333}.DebugGame Editor|HTML5.ActiveCfg = BuiltWithUnrealBuildTool|Win32
 		{08A17B06-38FC-4841-B885-BBC236AFF333}.DebugGame Editor|HTML5.Build.0 = BuiltWithUnrealBuildTool|Win32
@@ -88,6 +94,8 @@ Global
 		{25DEFBD4-9A78-4EFC-BF5F-857A2B25823B}.Shipping|Win64.ActiveCfg = Shipping_Game|x64
 		{25DEFBD4-9A78-4EFC-BF5F-857A2B25823B}.Shipping|Win64.Build.0 = Shipping_Game|x64
 =======
+=======
+>>>>>>> parent of ae7c509... Lets Pretend I fixed it
 		{1A733FCB-14F8-488F-92D0-459AAD4C5749}.DebugGame Editor|HTML5.ActiveCfg = BuiltWithUnrealBuildTool|Win32
 		{1A733FCB-14F8-488F-92D0-459AAD4C5749}.DebugGame Editor|HTML5.Build.0 = BuiltWithUnrealBuildTool|Win32
 		{1A733FCB-14F8-488F-92D0-459AAD4C5749}.DebugGame Editor|IOS.ActiveCfg = BuiltWithUnrealBuildTool|Win32
@@ -129,49 +137,77 @@ Global
 		{1A733FCB-14F8-488F-92D0-459AAD4C5749}.Shipping|Win64.ActiveCfg = BuiltWithUnrealBuildTool|Win32
 		{1A733FCB-14F8-488F-92D0-459AAD4C5749}.Shipping|Win64.Build.0 = BuiltWithUnrealBuildTool|Win32
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.DebugGame Editor|HTML5.ActiveCfg = HTML5_DebugGame_Editor|Win32
+<<<<<<< HEAD
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.DebugGame Editor|IOS.ActiveCfg = IOS_DebugGame_Editor|Win32
+=======
+		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.DebugGame Editor|IOS.ActiveCfg = HTML5_Shipping_Game|x64
+		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.DebugGame Editor|IOS.Build.0 = HTML5_Shipping_Game|x64
+>>>>>>> parent of ae7c509... Lets Pretend I fixed it
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.DebugGame Editor|Win32.ActiveCfg = DebugGame_Editor|Win32
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.DebugGame Editor|Win64.ActiveCfg = DebugGame_Editor|x64
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.DebugGame Editor|Win64.Build.0 = DebugGame_Editor|x64
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.DebugGame|HTML5.ActiveCfg = HTML5_DebugGame_Game|Win32
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.DebugGame|HTML5.Build.0 = HTML5_DebugGame_Game|Win32
+<<<<<<< HEAD
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.DebugGame|IOS.ActiveCfg = IOS_DebugGame_Game|Win32
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.DebugGame|IOS.Build.0 = IOS_DebugGame_Game|Win32
+=======
+		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.DebugGame|IOS.ActiveCfg = HTML5_Shipping_Game|x64
+		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.DebugGame|IOS.Build.0 = HTML5_Shipping_Game|x64
+>>>>>>> parent of ae7c509... Lets Pretend I fixed it
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.DebugGame|Win32.ActiveCfg = DebugGame_Game|Win32
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.DebugGame|Win32.Build.0 = DebugGame_Game|Win32
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.DebugGame|Win64.ActiveCfg = DebugGame_Game|x64
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.DebugGame|Win64.Build.0 = DebugGame_Game|x64
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Development Editor|HTML5.ActiveCfg = HTML5_Development_Editor|Win32
+<<<<<<< HEAD
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Development Editor|IOS.ActiveCfg = IOS_Development_Editor|Win32
+=======
+		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Development Editor|IOS.ActiveCfg = HTML5_Shipping_Game|x64
+		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Development Editor|IOS.Build.0 = HTML5_Shipping_Game|x64
+>>>>>>> parent of ae7c509... Lets Pretend I fixed it
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Development Editor|Win32.ActiveCfg = Development_Editor|Win32
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Development Editor|Win64.ActiveCfg = Development_Editor|x64
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Development Editor|Win64.Build.0 = Development_Editor|x64
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Development|HTML5.ActiveCfg = HTML5_Development_Game|Win32
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Development|HTML5.Build.0 = HTML5_Development_Game|Win32
+<<<<<<< HEAD
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Development|IOS.ActiveCfg = IOS_Development_Game|Win32
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Development|IOS.Build.0 = IOS_Development_Game|Win32
+=======
+		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Development|IOS.ActiveCfg = HTML5_Shipping_Game|x64
+		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Development|IOS.Build.0 = HTML5_Shipping_Game|x64
+>>>>>>> parent of ae7c509... Lets Pretend I fixed it
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Development|Win32.ActiveCfg = Development_Game|Win32
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Development|Win32.Build.0 = Development_Game|Win32
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Development|Win64.ActiveCfg = Development_Game|x64
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Development|Win64.Build.0 = Development_Game|x64
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Shipping|HTML5.ActiveCfg = HTML5_Shipping_Game|Win32
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Shipping|HTML5.Build.0 = HTML5_Shipping_Game|Win32
+<<<<<<< HEAD
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Shipping|IOS.ActiveCfg = IOS_Shipping_Game|Win32
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Shipping|IOS.Build.0 = IOS_Shipping_Game|Win32
+=======
+		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Shipping|IOS.ActiveCfg = HTML5_Shipping_Game|x64
+		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Shipping|IOS.Build.0 = HTML5_Shipping_Game|x64
+>>>>>>> parent of ae7c509... Lets Pretend I fixed it
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Shipping|Win32.ActiveCfg = Shipping_Game|Win32
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Shipping|Win32.Build.0 = Shipping_Game|Win32
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Shipping|Win64.ActiveCfg = Shipping_Game|x64
 		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7}.Shipping|Win64.Build.0 = Shipping_Game|x64
+<<<<<<< HEAD
 >>>>>>> parent of 63c5559... 2/21
+=======
+>>>>>>> parent of ae7c509... Lets Pretend I fixed it
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{08A17B06-38FC-4841-B885-BBC236AFF333} = {7BCBFBA9-ECBF-411B-87CD-B452BFF57F40}
-		{25DEFBD4-9A78-4EFC-BF5F-857A2B25823B} = {81A86389-902E-4D22-BABE-5F2CDFA81F8B}
+		{1A733FCB-14F8-488F-92D0-459AAD4C5749} = {0D9661C8-CC96-43B8-997F-E9F357BB792A}
+		{882BC80E-A9C1-4EF8-9105-4D4A0691B1F7} = {47A49447-A969-40FC-BAF5-1D06482E2287}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {07D97AE0-A9A4-41F9-9D4E-5E74F3ADEAE6}
+		SolutionGuid = {73EA0044-E3D7-48D6-A067-55F339BCD8EA}
 	EndGlobalSection
 EndGlobal

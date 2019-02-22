@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\Haneg\Desktop\VRCapstone\Source\VRCapstone\VRCapstone.Build.cs
 C:\Users\Haneg\Desktop\VRCapstone\Source\VRCapstone.Target.cs
 C:\Users\Haneg\Desktop\VRCapstone\Source\VRCapstoneEditor.Target.cs
@@ -13,3 +14,18 @@ E:\Columbia\Senior\Indie\VRCapstone\Source\VRCapstone\VRCapstone.Build.cs
 E:\Columbia\Senior\Indie\VRCapstone\Source\VRCapstone.Target.cs
 E:\Columbia\Senior\Indie\VRCapstone\Source\VRCapstoneEditor.Target.cs
 >>>>>>> parent of 5b99422... kjdjdjd
+=======
+D:\GitHub\VRCapstone\Source\VRCapstone\VRCapstone.Build.cs
+D:\GitHub\VRCapstone\Source\VRCapstone.Target.cs
+D:\GitHub\VRCapstone\Source\VRCapstoneEditor.Target.cs
+=======
+C:\Users\Haneg\Documents\GitHub\VRCapstone\Source\VRCapstone\VRCapstone.Build.cs
+C:\Users\Haneg\Documents\GitHub\VRCapstone\Source\VRCapstone.Target.cs
+C:\Users\Haneg\Documents\GitHub\VRCapstone\Source\VRCapstoneEditor.Target.cs
+>>>>>>> origin/master
+=======
+C:\Users\Haneg\Documents\GitHub\VRCapstone\Source\VRCapstone\VRCapstone.Build.cs
+C:\Users\Haneg\Documents\GitHub\VRCapstone\Source\VRCapstone.Target.cs
+C:\Users\Haneg\Documents\GitHub\VRCapstone\Source\VRCapstoneEditor.Target.cs
+>>>>>>> origin/master
+>>>>>>> parent of ae7c509... Lets Pretend I fixed it
