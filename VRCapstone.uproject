@@ -7,20 +7,7 @@
 		{
 			"Name": "VRCapstone",
 			"Type": "Runtime",
-			"LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"Engine"
-			]
-		}
-	],
-	"Plugins": [
-		{
-			"Name": "Niagara",
-			"Enabled": true
-		},
-		{
-			"Name": "HoudiniNiagara",
-			"Enabled": true
+			"LoadingPhase": "Default"
 		}
 	]
 }
