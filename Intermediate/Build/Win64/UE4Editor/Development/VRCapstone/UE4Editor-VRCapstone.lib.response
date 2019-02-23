@@ -6,10 +6,10 @@
 /NAME:"UE4Editor-VRCapstone.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"C:\workspace\VRCapstone\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h.obj"
-"C:\workspace\VRCapstone\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\VRCapstone.cpp.obj"
-"C:\workspace\VRCapstone\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\VRCapstoneGameModeBase.cpp.obj"
-"C:\workspace\VRCapstone\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\VRCapstone.init.gen.cpp.obj"
-"C:\workspace\VRCapstone\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\VRCapstoneGameModeBase.gen.cpp.obj"
-"C:\workspace\VRCapstone\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\PCLaunch.rc.res"
-/OUT:"C:\workspace\VRCapstone\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\UE4Editor-VRCapstone.lib"
+"C:\Users\Haneg\Desktop\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h.obj"
+"C:\Users\Haneg\Desktop\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\VRCapstone.cpp.obj"
+"C:\Users\Haneg\Desktop\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\VRCapstoneGameModeBase.cpp.obj"
+"C:\Users\Haneg\Desktop\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\VRCapstone.init.gen.cpp.obj"
+"C:\Users\Haneg\Desktop\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\VRCapstoneGameModeBase.gen.cpp.obj"
+"C:\Users\Haneg\Desktop\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\PCLaunch.rc.res"
+/OUT:"C:\Users\Haneg\Desktop\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\UE4Editor-VRCapstone.lib"
