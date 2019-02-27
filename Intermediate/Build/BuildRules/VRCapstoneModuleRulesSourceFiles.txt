@@ -1,3 +1,3 @@
-I:\Backup\Source\VRCapstone\VRCapstone.Build.cs
-I:\Backup\Source\VRCapstone.Target.cs
-I:\Backup\Source\VRCapstoneEditor.Target.cs
+D:\GitHub\VRCapstone\Source\VRCapstone\VRCapstone.Build.cs
+D:\GitHub\VRCapstone\Source\VRCapstone.Target.cs
+D:\GitHub\VRCapstone\Source\VRCapstoneEditor.Target.cs

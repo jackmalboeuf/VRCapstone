@@ -19,8 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeVRCapstone_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/VRCapstone",
 				PKG_CompiledIn | 0x00000000,
-				0xC1B23059,
-				0xBF65BBEB,
+				0x53B34A1D,
+				0x7A38C973,
 				nullptr, 0,
 				METADATA_PARAMS(nullptr, 0)
 			};
