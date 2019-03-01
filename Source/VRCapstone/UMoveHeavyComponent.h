@@ -45,9 +45,8 @@ protected:
 
 	void SetGoalLocation();
 	void RotateTowardLocation(float DeltaTime, FVector Location);
-	void RotateTowardPlayer(float DeltaTime);
 	void MoveTowardGoalLocation(float DeltaTime);
-	bool CheckRotationIsNearlyZero(FVector Location);
+	bool CheckRotationIsNearlyZero(float DeltaTime, FVector Location);
 
 public:	
 	// Called every frame
