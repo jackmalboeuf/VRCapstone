@@ -24,9 +24,9 @@
 /wd4838
 /we4668
 /I .
-/I D:\GitHub\VRCapstone\Intermediate\Build\Win64\UE4Editor\Inc\VRCapstone
-/I D:\GitHub\VRCapstone\Source
-/I D:\GitHub\VRCapstone\Source\VRCapstone
+/I D:\GitHubUpdate\VRCapstone\Intermediate\Build\Win64\UE4Editor\Inc\VRCapstone
+/I D:\GitHubUpdate\VRCapstone\Source
+/I D:\GitHubUpdate\VRCapstone\Source\VRCapstone
 /I Runtime
 /I Runtime\Core\Public
 /I Runtime\Core
@@ -410,12 +410,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"
-/FI"D:\GitHub\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h"
-/Yu"D:\GitHub\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"D:\GitHub\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h.pch"
-"D:\GitHub\VRCapstone\Source\VRCapstone\VRCapstone.cpp"
-/FI"D:\GitHub\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\Definitions.VRCapstone.h"
-/Fo"D:\GitHub\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\VRCapstone.cpp.obj"
+/FI"D:\GitHubUpdate\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h"
+/Yu"D:\GitHubUpdate\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"D:\GitHubUpdate\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h.pch"
+"D:\GitHubUpdate\VRCapstone\Source\VRCapstone\VRCapstone.cpp"
+/FI"D:\GitHubUpdate\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\Definitions.VRCapstone.h"
+/Fo"D:\GitHubUpdate\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\VRCapstone.cpp.obj"
 /TP
 /GR-
 /W4
