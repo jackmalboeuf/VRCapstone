@@ -1,3 +1,3 @@
-F:\Spring 2019\Indie Team\MMOVR\VRCapstone\Source\VRCapstone\VRCapstone.Build.cs
-F:\Spring 2019\Indie Team\MMOVR\VRCapstone\Source\VRCapstone.Target.cs
-F:\Spring 2019\Indie Team\MMOVR\VRCapstone\Source\VRCapstoneEditor.Target.cs
+E:\Columbia\Senior\Indie\VRCapstone\Source\VRCapstone\VRCapstone.Build.cs
+E:\Columbia\Senior\Indie\VRCapstone\Source\VRCapstone.Target.cs
+E:\Columbia\Senior\Indie\VRCapstone\Source\VRCapstoneEditor.Target.cs
