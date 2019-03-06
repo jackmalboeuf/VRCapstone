@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\VRCapstone.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{663AC314-23B7-4932-B033-3587F06E847B}</UniqueIdentifier>
+			<UniqueIdentifier>{7467FF77-CACE-4403-A95B-E32E85943C9F}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\VRCapstone.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{5AAA0D92-2D3E-4A68-A0E8-F5E0B77FA2FE}</UniqueIdentifier>
+			<UniqueIdentifier>{803E61AE-A114-4F85-98D2-9EC110E18E3C}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -24,9 +24,24 @@
 		<None Include="..\..\Config\DefaultGame.ini">
 			<Filter>Config</Filter>
 		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
 		<Filter Include="Source\VRCapstone">
-			<UniqueIdentifier>{75FE6FEE-92AE-4FC2-9B6E-58571A0830DA}</UniqueIdentifier>
+			<UniqueIdentifier>{A9A1C49F-2664-44C5-B814-52B58897ACE8}</UniqueIdentifier>
 		</Filter>
+		<ClCompile Include="..\..\Source\VRCapstone\UMoveComponent.cpp">
+			<Filter>Source\VRCapstone</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\VRCapstone\UMoveComponent.h">
+			<Filter>Source\VRCapstone</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\VRCapstone\UMoveHeavyComponent.cpp">
+			<Filter>Source\VRCapstone</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\VRCapstone\UMoveHeavyComponent.h">
+			<Filter>Source\VRCapstone</Filter>
+		</ClInclude >
 		<None Include="..\..\Source\VRCapstone\VRCapstone.Build.cs">
 			<Filter>Source\VRCapstone</Filter>
 		</None >
