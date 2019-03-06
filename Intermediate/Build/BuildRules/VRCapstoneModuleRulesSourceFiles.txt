@@ -1,3 +1,0 @@
-E:\Columbia\Senior\Indie\VRCapstone\Source\VRCapstone\VRCapstone.Build.cs
-E:\Columbia\Senior\Indie\VRCapstone\Source\VRCapstone.Target.cs
-E:\Columbia\Senior\Indie\VRCapstone\Source\VRCapstoneEditor.Target.cs
