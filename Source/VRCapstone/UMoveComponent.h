@@ -15,12 +15,13 @@ class VRCAPSTONE_API UUMoveComponent : public UActorComponent
 public:	
 	// Sets default values for this component's properties
 	UUMoveComponent();
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float wanderDistance;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float moveWaitTime;
 
 private:
-	UPROPERTY(EditAnywhere)
-	float wanderDistance;
-	UPROPERTY(EditAnywhere)
-	float moveWaitTime;
+
 	float timer;
 	FVector spawnLocation;
 	FVector direction;
