@@ -58,23 +58,23 @@ void UUMoveHeavyComponent::RotateTowardLocation(float DeltaTime, FVector Locatio
 		NewRotation.Yaw += m_rotationSpeed * DeltaTime;
 		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, FString::Printf(TEXT("rotate CounterClockwise")));
 	}
-	else if (FMath::Abs(diff) < FMath::Abs((m_rotationSpeed * DeltaTime)))
-	{
-		NewRotation.Yaw += diff * 10;
-		//HACK: Do whatever is also in the switch statement below. May need a switch statement of it's own to make sure we don't get infinite loop
-		//switch (m_state)
-		//{
-		//case RotatingTowardGoal:
-		//	m_timer = 2;
-		//	m_state = Moving;
-		//	break;
-		//case RotatingTowardPlayer:
-		//	m_timer = m_timeBetweenMovingOrShooting;
-		//	m_state = Standing;
-		//	break;
-		//}
-		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, FString::Printf(TEXT("add difference")));
-	}
+	//else if (FMath::Abs(diff) < FMath::Abs((m_rotationSpeed * DeltaTime)))
+	//{
+	//	NewRotation.Yaw += diff * 10;
+	//	//HACK: Do whatever is also in the switch statement below. May need a switch statement of it's own to make sure we don't get infinite loop
+	//	//switch (m_state)
+	//	//{
+	//	//case RotatingTowardGoal:
+	//	//	m_timer = 2;
+	//	//	m_state = Moving;
+	//	//	break;
+	//	//case RotatingTowardPlayer:
+	//	//	m_timer = m_timeBetweenMovingOrShooting;
+	//	//	m_state = Standing;
+	//	//	break;
+	//	//}
+	//	GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, FString::Printf(TEXT("add difference")));
+	//}
 	else
 	{
 		NewRotation.Yaw -= m_rotationSpeed * DeltaTime;
