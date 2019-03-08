@@ -1,3 +1,3 @@
-C:\Users\Haneg\Documents\GitHub\VRCapstone\Source\VRCapstone\VRCapstone.Build.cs
-C:\Users\Haneg\Documents\GitHub\VRCapstone\Source\VRCapstone.Target.cs
-C:\Users\Haneg\Documents\GitHub\VRCapstone\Source\VRCapstoneEditor.Target.cs
+I:\VRCapstone\Source\VRCapstone\VRCapstone.Build.cs
+I:\VRCapstone\Source\VRCapstone.Target.cs
+I:\VRCapstone\Source\VRCapstoneEditor.Target.cs
