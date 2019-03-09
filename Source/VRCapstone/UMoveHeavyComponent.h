@@ -6,6 +6,7 @@
 #include "Components/ActorComponent.h"
 #include "UMoveHeavyComponent.generated.h"
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FSpawnBulletDelegate);
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class VRCAPSTONE_API UUMoveHeavyComponent : public UActorComponent
@@ -15,11 +16,13 @@ class VRCAPSTONE_API UUMoveHeavyComponent : public UActorComponent
 public:	
 	// Sets default values for this component's properties
 	UUMoveHeavyComponent();
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	enum CharacterState { Standing, Moving, RotatingTowardPlayer, RotatingTowardGoal, Shooting };
 
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
-	enum CharacterState { Standing, Moving, RotatingTowardPlayer, RotatingTowardGoal, Shooting };
+	
 	CharacterState m_state;
 	FVector m_spawnLocation;
 	FVector m_direction;
@@ -39,14 +42,22 @@ protected:
 		float m_oddsOfShootingOffset;
 	UPROPERTY(EditAnywhere)
 		float m_oddsOfShootingInPercent;
+		float m_originalOddsOfShooting;
 	UPROPERTY(EditAnywhere)
 		int m_numberOfBulletsToShoot;
+
+		int m_bulletsShot;
+	UPROPERTY(EditAnywhere)
+		float m_timeBetweenEachBullet;
+	UPROPERTY(EditAnywhere, BlueprintAssignable)
+		FSpawnBulletDelegate OnShoot;
 
 
 	void SetGoalLocation();
 	void RotateTowardLocation(float DeltaTime, FVector Location);
 	void MoveTowardGoalLocation(float DeltaTime);
 	bool CheckRotationIsNearlyZero(float DeltaTime, FVector Location);
+	void Shoot();
 
 public:	
 	// Called every frame

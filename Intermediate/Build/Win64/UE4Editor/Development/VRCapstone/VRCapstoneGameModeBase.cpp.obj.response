@@ -24,9 +24,9 @@
 /wd4838
 /we4668
 /I .
-/I C:\Users\Haneg\Documents\GitHub\VRCapstone\Intermediate\Build\Win64\UE4Editor\Inc\VRCapstone
-/I C:\Users\Haneg\Documents\GitHub\VRCapstone\Source
-/I C:\Users\Haneg\Documents\GitHub\VRCapstone\Source\VRCapstone
+/I I:\VRCapstone\Intermediate\Build\Win64\UE4Editor\Inc\VRCapstone
+/I I:\VRCapstone\Source
+/I I:\VRCapstone\Source\VRCapstone
 /I Runtime
 /I Runtime\Core\Public
 /I Runtime\Core
@@ -404,18 +404,18 @@
 /I ThirdParty
 /I ThirdParty\libSampleRate\Public
 /I ThirdParty\libSampleRate
-/I "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE"
+/I "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.14.26428\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"
-/FI"C:\Users\Haneg\Documents\GitHub\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h"
-/Yu"C:\Users\Haneg\Documents\GitHub\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"C:\Users\Haneg\Documents\GitHub\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h.pch"
-"C:\Users\Haneg\Documents\GitHub\VRCapstone\Source\VRCapstone\VRCapstoneGameModeBase.cpp"
-/FI"C:\Users\Haneg\Documents\GitHub\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\Definitions.VRCapstone.h"
-/Fo"C:\Users\Haneg\Documents\GitHub\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\VRCapstoneGameModeBase.cpp.obj"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"
+/FI"I:\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h"
+/Yu"I:\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"I:\VRCapstone\Intermediate\Build\Win64\VRCapstoneEditor\Development\Engine\SharedPCH.Engine.h.pch"
+"I:\VRCapstone\Source\VRCapstone\VRCapstoneGameModeBase.cpp"
+/FI"I:\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\Definitions.VRCapstone.h"
+/Fo"I:\VRCapstone\Intermediate\Build\Win64\UE4Editor\Development\VRCapstone\VRCapstoneGameModeBase.cpp.obj"
 /TP
 /GR-
 /W4

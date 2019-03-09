@@ -22,8 +22,8 @@ void UUMoveHeavyComponent::BeginPlay()
 	m_state = Standing;
 	m_spawnLocation = GetOwner()->GetActorLocation();
 	m_timer = m_timeBetweenMovingOrShooting;
-	// ...
-	
+	m_bulletsShot = 0;
+	m_originalOddsOfShooting = m_oddsOfShootingInPercent;
 }
 
 void UUMoveHeavyComponent::SetGoalLocation()
@@ -118,6 +118,8 @@ void UUMoveHeavyComponent::TickComponent(float DeltaTime, ELevelTick TickType, F
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
+	GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, FString::Printf(TEXT("STATE %f"), m_state));
+
 	m_timer -= DeltaTime;
 	GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, FString::Printf(TEXT("Timer: %f"), m_timer));
 
@@ -130,17 +132,18 @@ void UUMoveHeavyComponent::TickComponent(float DeltaTime, ELevelTick TickType, F
 		{
 			SetGoalLocation();
 
-			if (m_oddsOfShootingInPercent <= 0)
-			{
-				m_state = RotatingTowardGoal;
-			}
-			else
-			{
+			
 				if (FMath::RandRange(1, 100) <= m_oddsOfShootingInPercent)
 				{
+					m_state = Shooting;
+					m_oddsOfShootingInPercent -= m_oddsOfShootingOffset;
 					//TODO shoot and lower m_oddsOfShootingInPercent by m_oddsOfShootingOffset
 				}
-			}
+				else
+				{
+					m_state = RotatingTowardGoal;
+					m_oddsOfShootingInPercent = m_originalOddsOfShooting;
+				}
 			
 			//m_timer = m_timeBetweenMovingOrShooting;
 		}
@@ -177,6 +180,27 @@ void UUMoveHeavyComponent::TickComponent(float DeltaTime, ELevelTick TickType, F
 		}
 		break;
 	case Shooting:
+		if (m_timer <= 0)
+		{
+			Shoot();
+		}
 		break;
+	}
+}
+
+void UUMoveHeavyComponent::Shoot()
+{
+	if (m_bulletsShot >= m_numberOfBulletsToShoot)
+	{
+		m_bulletsShot = 0;
+		m_state = Standing;
+		m_timer = m_timeBetweenMovingOrShooting;
+	}
+	else
+	{
+		//TODO: Raise shoot event
+		OnShoot.Broadcast();
+		m_bulletsShot++;
+		m_timer = m_timeBetweenEachBullet;
 	}
 }
