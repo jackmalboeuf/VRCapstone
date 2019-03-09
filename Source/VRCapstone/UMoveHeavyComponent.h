@@ -8,6 +8,9 @@
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FSpawnBulletDelegate);
 
+UENUM(BlueprintType)
+enum class CharacterState : uint8 { Standing, Moving, RotatingTowardPlayer, RotatingTowardGoal, Shooting };
+
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class VRCAPSTONE_API UUMoveHeavyComponent : public UActorComponent
 {
@@ -16,14 +19,16 @@ class VRCAPSTONE_API UUMoveHeavyComponent : public UActorComponent
 public:	
 	// Sets default values for this component's properties
 	UUMoveHeavyComponent();
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	enum CharacterState { Standing, Moving, RotatingTowardPlayer, RotatingTowardGoal, Shooting };
+	
+	
 
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
-	
-	CharacterState m_state;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		CharacterState m_state;
+
 	FVector m_spawnLocation;
 	FVector m_direction;
 	FVector m_goalLocation;
@@ -42,10 +47,12 @@ protected:
 		float m_oddsOfShootingOffset;
 	UPROPERTY(EditAnywhere)
 		float m_oddsOfShootingInPercent;
-		float m_originalOddsOfShooting;
+	float m_originalOddsOfShooting;
 	UPROPERTY(EditAnywhere)
 		int m_numberOfBulletsToShoot;
+	
 
+	UPROPERTY(EditAnywhere)
 		int m_bulletsShot;
 	UPROPERTY(EditAnywhere)
 		float m_timeBetweenEachBullet;
@@ -62,7 +69,4 @@ protected:
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
-
-		
-	
 };

@@ -18,12 +18,13 @@ UUMoveHeavyComponent::UUMoveHeavyComponent()
 // Called when the game starts
 void UUMoveHeavyComponent::BeginPlay()
 {
+	RegisterComponent();
 	Super::BeginPlay();
-	m_state = Standing;
+	m_originalOddsOfShooting = m_oddsOfShootingInPercent;
+	m_state = CharacterState::Standing;
 	m_spawnLocation = GetOwner()->GetActorLocation();
 	m_timer = m_timeBetweenMovingOrShooting;
 	m_bulletsShot = 0;
-	m_originalOddsOfShooting = m_oddsOfShootingInPercent;
 }
 
 void UUMoveHeavyComponent::SetGoalLocation()
@@ -118,8 +119,6 @@ void UUMoveHeavyComponent::TickComponent(float DeltaTime, ELevelTick TickType, F
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, FString::Printf(TEXT("STATE %f"), m_state));
-
 	m_timer -= DeltaTime;
 	GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, FString::Printf(TEXT("Timer: %f"), m_timer));
 
@@ -127,28 +126,26 @@ void UUMoveHeavyComponent::TickComponent(float DeltaTime, ELevelTick TickType, F
 
 	switch (m_state)
 	{
-	case Standing:
+	case CharacterState::Standing:
 		if (m_timer < 0)
 		{
 			SetGoalLocation();
 
-			
 				if (FMath::RandRange(1, 100) <= m_oddsOfShootingInPercent)
 				{
-					m_state = Shooting;
+					m_state = CharacterState::Shooting;
 					m_oddsOfShootingInPercent -= m_oddsOfShootingOffset;
-					//TODO shoot and lower m_oddsOfShootingInPercent by m_oddsOfShootingOffset
 				}
 				else
 				{
-					m_state = RotatingTowardGoal;
+					m_state = CharacterState::RotatingTowardGoal;
 					m_oddsOfShootingInPercent = m_originalOddsOfShooting;
 				}
 			
 			//m_timer = m_timeBetweenMovingOrShooting;
 		}
 		break;
-	case Moving:
+	case CharacterState::Moving:
 		MoveTowardGoalLocation(DeltaTime);
 		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, FString::Printf(TEXT("ActorLocation().X: %f"), GetOwner()->GetActorLocation().X));
 		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, FString::Printf(TEXT("m_goalLocation.X: %f"), m_goalLocation.X));
@@ -156,30 +153,30 @@ void UUMoveHeavyComponent::TickComponent(float DeltaTime, ELevelTick TickType, F
 		if (FMath::IsNearlyEqual(GetOwner()->GetActorLocation().X, m_goalLocation.X, m_movementSpeed/10.0f)
 			&& FMath::IsNearlyEqual(GetOwner()->GetActorLocation().Y, m_goalLocation.Y, m_movementSpeed/10.0f))
 		{
-			m_state = RotatingTowardPlayer;
+			m_state = CharacterState::RotatingTowardPlayer;
 		}
 		//if (m_timer < 0)
 		//{
 		//	m_state = RotatingTowardPlayer;
 		//}
 		break;
-	case RotatingTowardGoal:
+	case CharacterState::RotatingTowardGoal:
 		RotateTowardLocation(DeltaTime, m_goalLocation);
 		if (CheckRotationIsNearlyZero(DeltaTime, m_goalLocation))
 		{
 			//m_timer = 2;
-			m_state = Moving;
+			m_state = CharacterState::Moving;
 		}
 		break;
-	case RotatingTowardPlayer:
+	case CharacterState::RotatingTowardPlayer:
 		RotateTowardLocation(DeltaTime, m_player->GetActorLocation());
 		if (CheckRotationIsNearlyZero(DeltaTime, m_player->GetActorLocation()))
 		{
 			m_timer = m_timeBetweenMovingOrShooting;
-			m_state = Standing;
+			m_state = CharacterState::Standing;
 		}
 		break;
-	case Shooting:
+	case CharacterState::Shooting:
 		if (m_timer <= 0)
 		{
 			Shoot();
@@ -193,12 +190,11 @@ void UUMoveHeavyComponent::Shoot()
 	if (m_bulletsShot >= m_numberOfBulletsToShoot)
 	{
 		m_bulletsShot = 0;
-		m_state = Standing;
+		m_state = CharacterState::Standing;
 		m_timer = m_timeBetweenMovingOrShooting;
 	}
 	else
 	{
-		//TODO: Raise shoot event
 		OnShoot.Broadcast();
 		m_bulletsShot++;
 		m_timer = m_timeBetweenEachBullet;
