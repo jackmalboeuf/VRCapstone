@@ -146,7 +146,7 @@ void UUMoveHeavyComponent::TickComponent(float DeltaTime, ELevelTick TickType, F
 		}
 		break;
 	case CharacterState::Moving:
-		MoveTowardGoalLocation(DeltaTime);
+		/*MoveTowardGoalLocation(DeltaTime);
 		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, FString::Printf(TEXT("ActorLocation().X: %f"), GetOwner()->GetActorLocation().X));
 		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, FString::Printf(TEXT("m_goalLocation.X: %f"), m_goalLocation.X));
 
@@ -154,11 +154,10 @@ void UUMoveHeavyComponent::TickComponent(float DeltaTime, ELevelTick TickType, F
 			&& FMath::IsNearlyEqual(GetOwner()->GetActorLocation().Y, m_goalLocation.Y, m_movementSpeed/10.0f))
 		{
 			m_state = CharacterState::RotatingTowardPlayer;
-		}
-		//if (m_timer < 0)
-		//{
-		//	m_state = RotatingTowardPlayer;
-		//}
+		}*/
+
+		m_state = CharacterState::Shooting;
+
 		break;
 	case CharacterState::RotatingTowardGoal:
 		RotateTowardLocation(DeltaTime, m_goalLocation);

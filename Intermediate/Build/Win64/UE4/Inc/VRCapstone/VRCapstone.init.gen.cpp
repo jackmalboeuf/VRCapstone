@@ -11,17 +11,21 @@
 #endif
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeVRCapstone_init() {}
+	VRCAPSTONE_API UFunction* Z_Construct_UDelegateFunction_VRCapstone_SpawnBulletDelegate__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_VRCapstone()
 	{
 		static UPackage* ReturnPackage = nullptr;
 		if (!ReturnPackage)
 		{
+			static UObject* (*const SingletonFuncArray[])() = {
+				(UObject* (*)())Z_Construct_UDelegateFunction_VRCapstone_SpawnBulletDelegate__DelegateSignature,
+			};
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/VRCapstone",
 				PKG_CompiledIn | 0x00000000,
-				0x53B34A1D,
-				0x7A38C973,
-				nullptr, 0,
+				0x5088270B,
+				0xC7A853B2,
+				SingletonFuncArray, ARRAY_COUNT(SingletonFuncArray),
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);
